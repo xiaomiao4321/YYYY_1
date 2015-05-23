@@ -171,7 +171,25 @@ public class SQLString {
 				+ " where month = '" + currentString + "'";
 		return sql;
 	}
-
+	/**
+	 * Borrow_Return Manager
+	 * @author LLL
+	 * @return
+	 */
+	/**
+	 * 根据类型获取总和
+	 * @param kind
+	 * @return
+	 */
+	public static String getTotal(int kind){
+		String sql = "select sum(money) as totalborrow from borrow_manager where kind = "+kind; 
+		return sql;
+	}
+	public static String  getList(int kind) {
+		String sql = "select userId,money,return_time from borrow_manager where kind = "+kind;
+		return sql;
+	}
+	
 	/*
 	 * Init
 	 */
