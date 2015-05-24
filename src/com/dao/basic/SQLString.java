@@ -190,6 +190,7 @@ public class SQLString {
 		return sql;
 	}
 	
+	
 	/*
 	 * Init
 	 */

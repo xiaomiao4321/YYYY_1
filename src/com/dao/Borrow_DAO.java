@@ -1,6 +1,5 @@
 package com.dao;
 
-import android.R.integer;
 import android.database.Cursor;
 
 import com.dao.basic.BasicDAO;
@@ -25,4 +24,11 @@ public class Borrow_DAO {
 		Cursor cursor = dao.selectCursor(sql);
 		return cursor;
 	}
+	/**
+	 * 将添加的借贷item写入到数据库
+	 */
+//	public void insertBorrowItem(){
+//		String sql = SQLString.InsertBorrowItem();
+//		dao.insert(sql);
+//	}
 }
